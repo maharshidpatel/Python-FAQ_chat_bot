@@ -1,3 +1,8 @@
+"""
+Author: Maharshi Patel, 000738366
+Date: 24-09-2024
+Description: This module contains functions for loading data from text files.
+"""
 def file_input(filename):
     """
         Loads each line of the file into a list, stripping whitespace, and returns it.

@@ -1,3 +1,9 @@
+"""
+Author: Maharshi Patel, 000738366
+Date: 24-09-2024
+Description: This script implements a Discord chatbot that uses the faq_bot_brain.py's logic.
+"""
+
 import discord
 from faq_bot_brain import *
 

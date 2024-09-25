@@ -1,3 +1,12 @@
+"""
+Author: Maharshi Patel, 000738366
+Date: 24-09-2024
+Description: This module manages the chatbot's logic for processing user input and generating
+             responses. It understands 20 predefined questions and answers from a given text file 
+             with minimal normalization to handle variations in input. Functions include intent 
+             recognition for greetings, farewells, and FAQs, as well as a basic normalization 
+             process to improve matching accuracy.
+"""
 from file_input import file_input
 
 # Global variables for intents and responses.
