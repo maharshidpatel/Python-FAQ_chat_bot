@@ -1,43 +1,55 @@
-
 import discord
 from faq_bot_brain import *
 
 class MyClient(discord.Client):
+    """
+    Discord client class for the bot, handling bot events such as logging in and responding to messages.
+    """
 
-    """
-    This is the constructor. Sets the default 'intents' for the bot.
-    """
     def __init__(self):
-        
+        """
+        Initializes the bot with default intents and enables message content reading.
+        """
         intents = discord.Intents.default()
         intents.message_content = True
         super().__init__(intents=intents)
 
-    
-    """
-    Called when the bot is fully logged in.
-    
-    """
     async def on_ready(self):
+        """
+        Event handler called when the bot has successfully logged in.
+        """
         print('Logged on as', self.user)
 
-    
-    """
-    Called whenever the bot receives a message. The 'message' object
-    contains all the pertinent information.
-    """
     async def on_message(self, message):
+        """
+        Event handler called when a message is received. Processes and responds to messages.
 
-        # don't respond to ourselves
+        Args:
+            message (discord.Message): The message object containing information about the received message.
+        """
+        # Don't respond to the bot's own messages.
         if message.author == self.user:
             return
 
-        # get the utterance and generate the response
+        # Process the message to generate a response.
+        
         utterance = message.content
-        intent = understand(utterance)
-        response = generate(intent)
+        
+        # Normalize the message content to be forgiving with case matching, whitespace, and punctuation.
+        normalized_utterance = normalize(utterance)
+        
+        # Determine the intent of the message.
+        intent = understand(normalized_utterance)
+        
+        try:
+            # Attempt to include the author's global name in the response.
+            author_name = " " + message.author.global_name + "!"
+            response = generate(intent, author_name)
+        except AttributeError:
+            # If the author's global name is not available.
+             response = generate(intent)
 
-        # send the response
+        # Send the generated response back to the channel where the message was received.
         await message.channel.send(response)
 
 

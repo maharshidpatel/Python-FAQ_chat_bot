@@ -1,0 +1,39 @@
+'Shop Chat Assist' Discord bot link:
+https://discord.com/oauth2/authorize?client_id=1288161534991794197&permissions=274877908992&integration_type=0&scope=bot
+
+Greeting words:
+
+Hello
+Hi
+Hey
+Good morning
+Good afternoon
+Good evening
+Greetings
+What’s up?
+Howdy
+Hi there
+Hey there
+Yo
+How’s it going?
+How you doing?
+
+Ending Utterances words:
+
+Goodbye
+Bye
+See you
+See you later
+Take care
+Have a great day
+Catch you later
+Talk to you soon
+Farewell
+Later
+Peace out
+Thanks, bye
+Thanks
+Thank you
+
+When a user sends a greeting, the bot should respond with a personalized welcome message mentioning the sender’s name
+or when the conversation is ending, the bot should thank or acknowledge the user by name.
