@@ -1,0 +1,20 @@
+(?:\b(?:check|track|find|see|look)\b.*?\b(?:order|orders|purchase|purchases|purchasing|shipment|shipments|status|statuses)\b){e<=2}
+(?:\b(?:change|update|modify|edit)\b.*?\b(?:shipping|delivery)\b.*?\baddress\b.*?\b(?:order|orders|purchase|purchases|placed|submitted)\b){e<=2}
+(?:\b(?:delivery|shipping|arrive|arrived|time|times|when)\b.*?\b(?:standard|express|normal|usual)\b.*?\b(?:service|services|option|options)\b){e<=2}
+(?:\b(?:lost|missing|misplaced|didn'?t get|not receive)\b.*?\b(?:package|packages|order|orders|purchase|purchases)\b.*?\b(?:report|reports|status|statuses|action|actions)\b){e<=2}
+(?:\b(?:hidden|extra|tax|taxes|fee|fees|charge|charges|cost|costs)\b.*?\binternational\b.*?\b(?:order|orders|purchase|purchases)\b){e<=2}
+(?:\b(?:return|returns|refund|refunds|exchange|exchanges)\b.*?\b(?:item|items|product|products)\b.*?\b(?:sale|sales|discount|discounts|promotion|promotions)\b){e<=2}
+(?:\b(?:how long|when|time|times)\b.*?\b(?:refund|refunds|return|returns)\b.*?\b(?:money|payment|payments|credit|credits|amount|amounts)\b){e<=2}
+(?:\b(?:reschedule|adjust|change|modify|miss|missed|overlook|ensure|stay on top|avoid|proactively manage)\b.*?\b(?:delivery|scheduled|time|window|fit|fits|needs|convenient)\b.*?\b(?:available|miss|missed|receive|received)\b){e<=2}
+(?:\b(?:gift|gifts|wrapping|wrapped|custom|customized|message|messages)\b.*?\b(?:add|include)\b.*?\b(?:order|orders|purchase|purchases)\b){e<=2}
+(?:\b(?:apply|enter|use|add)\b.*?\b(?:promo|promotion|discount|discounts|voucher|vouchers|coupon|coupons)\b.*?\b(?:code|codes)\b.*?\b(?:checkout|order|orders|purchase|purchases|payment|payments)\b){e<=2}
+(?:\b(?:customer|support|service|help)\b.*?\b(?:available|contact|reach|issue|issues|problem|problems)\b){e<=2}
+(?:\b(?:modify|change|changes|edit|update|adjust)\b.*?\b(?:order|orders|purchase|purchases)\b.*?\b(?:after|once|when)?\s?\b(?:placed|submitted)\b){e<=2}
+(?:\b(?:sign up|subscribe|get|receive|alert|alerts)\b.*?\b(?:stock|restock|availability|available)\b.*?\b(?:notification|notifications|message|messages)\b){e<=2}
+(?:\b(?:warranty|guarantee|coverage)\b.*?\b(?:period|duration)\b.*?\b(?:electronics|item|items|product|products)\b){e<=2}
+(?:\b(?:membership|benefit|benefits|reward|rewards|loyalty|points)\b.*?\b(?:frequent|returning|regular)\b.*?\b(?:customer|customers)\b){e<=2}
+(?:\b(?:track|tracking|find|see|check|where|how)\b.*?\b(?:status|statuses|return|returns)\b.*?\b(?:shipment|shipments|package|packages|order|orders|purchase|purchases)\b)
+(?:\b(?:price|match|comparison|refund|refunds)\b.*?\b(?:item|items|product|products)\b.*?\b(?:found|offer|offers)\b){e<=2}
+(?:\b(?:accepted|accepting|accept)\b.*?\b(?:payment|payments)\b.*?\b(?:method|methods|option|options)(?:.*?\b(?:credit|debit|cash|paypal|card)\b)?){e<=2}
+(?:\b(?:same-day|fast|express)\b.*?\b(?:delivery|shipping)\b.*?\b(?:item|items|order|orders|purchase|purchases)\b){e<=2}
+(?:\b(?:cancel|canceled|canceling|void|stop)\b.*?\b(?:order|orders|purchase|purchases)\b.*?\b(?:shipped|unshipped|processed)\b){e<=2}

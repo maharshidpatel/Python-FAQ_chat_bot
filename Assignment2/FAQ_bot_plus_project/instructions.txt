@@ -1,0 +1,163 @@
+PHASE 1:
+
+If any of the listed greeting or ending words (e.g., "Hello", "Hi", "Goodbye", "See you") appear in the user's input, the bot will recognize the utterance and respond with a predetermined greeting or farewell message.
+
+Greeting words:
+
+Hello
+Hi
+Hey
+Good morning
+Good afternoon
+Good evening
+Greetings
+What’s up?
+Howdy
+Hi there
+Hey there
+Yo
+How’s it going?
+How you doing?
+
+Ending Utterances words:
+
+Goodbye
+Bye
+See you
+See you later
+Take care
+Have a great day
+Catch you later
+Talk to you soon
+Farewell
+Later
+Peace out
+Thanks, bye
+Thanks
+Thank you
+
+Questions and Answers3.
+
+1. How do I check the status of my order after purchasing? 
+1. Where can I track my order status? 
+A1. You can check your order status by logging into your account and visiting the "My Orders" section, where you will see the latest updates.
+
+2. Is there a way to change my shipping address once the order is placed? 
+2. Can I update my delivery address after placing an order? 
+A2. Once an order is placed, you can contact customer support immediately to request a shipping address change, but it may not be possible if the order is already processed.
+
+3. What are the typical delivery times for standard and express shipping? 
+3. How long does it usually take for standard or express shipping? 
+A3. Standard shipping typically takes 3-7 business days, while express shipping options range from 1-3 business days, depending on your location.
+
+4. What should I do if my package is lost during delivery? 
+4. How can I report a lost package? 
+A4. If your package is lost during delivery, contact our customer support team for assistance. They will work with the shipping carrier to resolve the issue.
+
+5. Are there any hidden fees or taxes for international orders? 
+5. Do international orders include additional fees or taxes? 
+A5. International orders may incur additional taxes, customs duties, or fees, which are the responsibility of the customer and are displayed at checkout.
+
+6. Can I return items bought during a sale or promotion? 
+6. Is it possible to return discounted items? 
+A6. Yes, items bought during a sale or promotion can be returned unless stated otherwise in the promotion's terms.
+
+7. How long do refunds take after returning a product? 
+7. When will I receive my refund after a return? 
+A7. Refunds are typically processed within 5-7 business days after we receive and inspect the returned product.
+
+8. What happens if I miss my delivery window? 
+8. Can I reschedule my delivery if I’m not available? 
+A8. If you miss your delivery window, the carrier will usually attempt redelivery or provide instructions for picking up the package at a local facility.
+
+9. Are there options for gift wrapping or personalized messages with orders? 
+9. Can I add gift wrapping or custom notes to my order? 
+A9. Yes, we offer gift-wrapping services and the option to include a personalized message at checkout for an additional fee.
+
+10. How do I apply a promo code at checkout? 
+10. Where can I enter a discount code during checkout? 
+A10. To apply a promo code, enter it in the "Promo Code" field at checkout before completing your order.
+
+11. What kind of customer support is available if I encounter issues? 
+11. How can I contact after-sales service regarding an issue with my order? 
+A11. We offer 24/7 customer support via email, live chat, and phone to assist with any order-related issues.
+
+12. Is it possible to modify an order once it has been placed? 
+12. Can I make changes to my order after placing it? 
+A12. Orders cannot be modified after they are placed; however, you may cancel the order if it hasn’t been processed.
+
+13. Can I sign up for restock notifications for sold-out items? 
+13. How do I get alerts when out-of-stock products are available again? 
+A13. Yes, you can sign up for restock notifications by clicking "Notify Me" on the product page of the sold-out item.
+
+14. What is the warranty period for electronics purchased from the site?
+14. How long is the warranty for electronic items? 
+A14. Electronics purchased from our site come with a one-year warranty, covering manufacturer defects.
+
+15. Are there membership benefits for frequent shoppers? 
+15. Do regular customers get special rewards or perks? 
+A15. Yes, frequent shoppers can join our membership program, which offers benefits like exclusive discounts, early access to sales, and more.
+
+16. How do I track a return shipment? 
+16. Where can I check the status of my return package? 
+A16. You can track a return shipment by using the tracking number provided when you initiate the return process.
+
+17. Do you offer price matching for items found cheaper elsewhere? 
+17. Can I get a refund if I find the same product at a lower price? 
+A17. We do not offer price matching, but we frequently run promotions and discounts to offer competitive pricing.
+
+18. What are the accepted payment methods? 
+18. Which payment options are accepted? 
+A18. We accept major credit/debit cards, PayPal, and digital payment methods like Apple Pay and Google Pay.
+
+19. ow do I check if an item is available for same-day delivery? 
+19. How do I verify if same-day delivery is available for this order? 
+A19. You can check if an item is available for same-day delivery by entering your postal code on the product page.
+
+20. Can I cancel my order if it hasn’t been shipped yet? 
+20. Is it possible to cancel an unshipped order? 
+A20. You can cancel your order if it hasn't been shipped by contacting customer support as soon as possible.
+
+
+PHASE 2:
+
+When no specific intent is matched, the bot activates fallback strategies to interpret and respond effectively:
+
+    Detecting Questions and Commands: The bot recognizes whether you're asking a question or giving a command, then adjusts its tone and response accordingly.
+
+    Noun Chunk Extraction: For statements, the bot identifies key noun phrases to craft a more relevant response based on your topic or object of interest.
+
+    Location-Based Queries: Mention any place or landmark, and the bot may provide a Google Maps link to assist with directions.
+
+    People and Organizations: If you inquire about known individuals or companies, the bot may offer a Google search link or Wikipedia link to help you learn more.
+
+Here are some sample utterances to explore the bot's fallback capabilities:
+
+Detecting Questions and Commands:
+
+    "Can you help me find a new phone?" (Question)
+    "Show me the latest deals!" (Command)
+
+Noun Chunk Extraction:
+
+    "I’m interested in the Photography." (Statement with a specific topic)
+    "Tell me about the newest trends." (Statement about trends)
+
+Location-Based Queries:
+
+    "Where is the nearest Starbucks?"
+    "How do I get to Central Park?"
+
+People and Organizations:
+
+    "Who is Elon Musk?"
+    "Tell me about Microsoft."
+
+
+PHASE 3:
+
+'Shop Chat Assist' Discord bot link:
+https://discord.com/oauth2/authorize?client_id=1288161534991794197&permissions=274877908992&integration_type=0&scope=bot
+
+When a user sends a greeting, the bot should respond with a personalized welcome message mentioning the sender’s name
+or when the conversation is ending, the bot should thank or acknowledge the user by name.
