@@ -1,0 +1,10 @@
+The recommendation system employs TF-IDF (Term Frequency-Inverse Document Frequency) for vectorization, converting articles into numerical representations that highlight word importance. It then calculates cosine similarity to measure content similarity between articles.
+
+This system spots and removes duplicate articles (with a similarity score of 1.0) from the recommendations, even if they are listed multiple times in the CSV file. This ensures that users receive diverse and relevant suggestions.
+
+Sources Used to Learn:
+
+https://scikit-learn.org/1.5/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
+https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html
+https://www.learndatasci.com/glossary/tf-idf-term-frequency-inverse-document-frequency/
+Statistical NLP.pdf
